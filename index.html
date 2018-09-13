@@ -8,7 +8,7 @@
 	<!-- Added link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="javascript" href="assets/javascript/game.js" >
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
 
 
 </head>
@@ -27,11 +27,11 @@
 
 	<script type="text/javascript">
 
-    
-
-      var WinsCounter = 0;
-      var LossesCounter = 0;
+      var WinsCounter = false;
+      var LossesCounter = true;
       var GuessesLeftCounter = 0;
+      var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "_"];
+
 
 // This document.ready isn't necessary in this example... but is needed in cases where the HTML is complex.
     // This code makes sure that the JavaScript doesn't get run until the HTML is finished loading
@@ -39,39 +39,26 @@
 
     $(document).ready(function() {
 
+      });
+
+      var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      console.log(letters.length);
+document.getElementById("Choosen").appendChild = letters.length;
+$("#Choosen").append(letters.random); {
+
+};
+
+
+
 
 // FUNCTIONS
       // ====================================================================
       // Here we create various "on click" events which capture clicks
       // Inside each click event is the code to create an alert, update the counter, and show the updated count.
       // Take note that you can chain events onto an element
-      // With this even if our ids are created at a later date our events will still always work
-      $("#Choosen").on("click", function() {
+      // With this even if our ids are created at a later date our events will still always work 
 
-        alert("Mmm... Peanut Butter Jelly Time.");
-        pbjCounter++;
-        alert("You've eaten " + pbjCounter + " PB&J sandwiches");
-
-
-      });
-      $("#grilledcheese").on("click", function() {
-
-        alert("Nom nom nom. Gooey Gooey Grilled Cheese!");
-        grilledCheeseCounter++;
-        alert("You've eaten " + grilledCheeseCounter + " grilled cheese sandwiches");
-
-
-      });
-      $("#roastbeef").on("click", function() {
-
-        alert("No qualms about animal rights here. I'm all about that roast beef.");
-        roastBeefCounter++;
-        alert("You've eaten " + roastBeefCounter + " roast beef sandwiches");
-
-
-      });
-      
-  </script>
+</script>
 
   </body>
 
